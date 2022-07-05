@@ -1,5 +1,10 @@
-#include <stdio.h>
 #include "main.h"
+
+/**
+ * print - print variable recursively using _putchar
+ * @n: variable to print
+ */
+void print(int n);
 
 /**
  * print_to_98 - print all natural numbers from var to 98
@@ -17,9 +22,12 @@ void print_to_98(int var)
 		int ii;
 		for (ii = var; ii >= stopLimit; ii--)
 		{
-			printf("%d", ii);
+			print(ii);
 			if (ii != stopLimit)
-				printf(", ");
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
 	else
@@ -27,10 +35,29 @@ void print_to_98(int var)
 		int jj;
 		for (jj = var; jj <= stopLimit; jj++)
 		{
-			printf("%d", jj);
+			print(var);
 			if (var != stopLimit)
-				printf(", ");
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
 	_putchar(' ');
+}
+
+/**
+ * print - to print
+ * @n: var
+ */
+void print(int n)
+{
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+	if (n / 10)
+		print(n / 10);
+	_putchar(n % 10 + '0');
 }
