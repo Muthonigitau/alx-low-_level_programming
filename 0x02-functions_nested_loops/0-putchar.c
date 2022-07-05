@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - this program prints _putcha
+ * main - this program prints _putchar
  *
  * created : Sanctus-Peter
  * cc: 5 july, 2022
@@ -11,7 +11,14 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	char var[] = "_putchar";
+	int ii;
+	/* length of the array var*/
+	int lenVar = sizeof(var) / sizeof(var[0]);
+
+	for (ii = 0; ii < lenVar; ii++)
+		_putchar(var[ii]);
+	_putchar('\n');
 
 	return (0);
 }
