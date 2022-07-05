@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_last_digit - print last digit 
+ * print_last_digit - print last digit
  * @var: variable whose last digit is to be printed
  *
  * Created - Sanctus-Peter
@@ -12,5 +12,7 @@
 
 int print_last_digit(int var)
 {
+	_putchar ((var % 10) + '0');
+
 	return (var % 10);
 }
