@@ -32,5 +32,5 @@ void print_to_98(int var)
 				printf(", ");
 		}
 	}
-	_putchar(' ');
+	printf("\n");
 }
