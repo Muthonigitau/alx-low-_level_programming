@@ -12,12 +12,13 @@
 int main(void)
 {
 	char var[] = "_putchar";
-	int ii = 0;
+	int ii;
+	/*length of the array var*/
+	int lenVar = sizeof(var) / sizeof(var[0]);
 
-	while (ii != '\0')
+	for (ii = 0; ii < lenVar - 1; ii++)
 	{
 		_putchar(var[ii]);
-		ii++;
 	}
 		_putchar('\n');
 
