@@ -24,28 +24,33 @@ void print_times_table(int n)
 
 	if (n < 0 || n > 15)
 		_putchar('\n');
-	for (ii = 0; ii <= n; ii++)
+	else
 	{
-		for (jj = 0; jj <= n; jj++)
+		for (ii = 0; ii <= n; ii++)
 		{
-			mul = ii * jj;
-			if (jj == 0)
+			for (jj = 0; jj <= n; jj++)
+			{
+				mul = ii * jj;
+				if (jj == 0)
 				_putchar('0' + mul);
-			else if (mul < 10)
-			{
-				_putchar(' ');
-				_putchar('0' + mul);
+				else if (mul < 10)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar('0' + mul);
+				}
+				else
+				{
+					print(mul);
+				}
+				if (jj < n)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
-			else
-			{
-				print(mul);
-			}
-			if (jj < n)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
