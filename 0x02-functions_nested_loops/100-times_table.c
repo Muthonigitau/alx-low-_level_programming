@@ -39,6 +39,11 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar('0' + mul);
 				}
+				else if (mul < 100)
+				{
+					_putchar(' ');
+					print(mul);
+				}
 				else
 				{
 					print(mul);
