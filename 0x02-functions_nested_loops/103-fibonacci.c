@@ -2,7 +2,8 @@
 
 /**
  * main - sum of the even values of a Fibonacci
- * 
+ * Created by : Sanctus-Peter
+ * cc: 5th July, 2022
  *
  * Return: 0
  */
