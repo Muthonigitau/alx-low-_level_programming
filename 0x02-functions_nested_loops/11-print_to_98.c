@@ -28,7 +28,7 @@ void print_to_98(int var)
 		for (jj = var; jj <= stopLimit; jj++)
 		{
 			printf("%d", jj);
-			if (var != stopLimit)
+			if (jj != stopLimit)
 				printf(", ");
 		}
 	}
