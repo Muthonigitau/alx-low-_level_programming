@@ -12,7 +12,14 @@
 
 int print_last_digit(int var)
 {
-	_putchar ((var % 10) + '0');
+	int result;
 
-	return (var % 10);
+	if (var < 0)
+		result = -1 * (var % 10);
+	else
+		result = var % 10;
+
+	_putchar ((result) + '0');
+
+	return (result);
 }
