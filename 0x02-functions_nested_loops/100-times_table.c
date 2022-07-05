@@ -20,12 +20,10 @@ void print(int var)
 
 void print_times_table(int n)
 {
+	int ii, jj, mul;
+
 	if (n < 0 || n > 15)
 		_putchar('\n');
-	int ii;
-	int jj;
-	int mul;
-
 	for (ii = 0; ii <= n; ii++)
 	{
 		for (jj = 0; jj <= n; jj++)
