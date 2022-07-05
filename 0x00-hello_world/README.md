@@ -61,15 +61,15 @@ Write a C program that prints the size of various types on the computer it is co
 - Your program should return 0
 - You might have to install the package **libc6-dev-i386** from the command line using 
 
-    '''
+    ```
     sudo apt-get update
-    ''' 
+    ````
 
     after updating apt database we can now install libc6-dev-i386 by running the following command 
 
-    '''
+    ```
     sudo apt-get -y install libc6-dev-i386
-    ''' 
+    ``` 
 
     on your Linux to test the **-m32 gcc** option
 
