@@ -1,4 +1,4 @@
-# If Else While on C
+# If, Else, While on C
 
 This is the second task on ALX low level programming, this task exposed me to basic syntax on C, use of comments, Data types| integer types, Declerations, Characters, Arithmetic Operators, Variables assignments, Comparisons, Logical operators, if, if...else, while loops, do...while loops, for loops among others.
 
