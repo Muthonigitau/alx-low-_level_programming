@@ -74,18 +74,21 @@ Write a C program that prints the size of various types on the computer it is co
     on your Linux to test the **-m32 gcc** option
 
 #### Output Sample on 64-bit
+```
 Size of a char: 1 byte(s)
 Size of an int: 4 byte(s)
 Size of a long int: 4 byte(s)
 Size of a long long int: 8 byte(s)
 Size of a float: 4 byte(s)
-
+```
 #### Output Sample on 32-bit
+```
 Size of a char: 1 byte(s)
 Size of an int: 4 byte(s)
 Size of a long int: 8 byte(s)
 Size of a long long int: 8 byte(s)
 Size of a float: 4 byte(s)
+```
 
 ### 7. [Intel](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x00-hello_world/100-intel)
 #### Descriptions
