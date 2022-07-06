@@ -13,7 +13,7 @@ At the end of this task, I was able to learn :
 - How to format and write readable code using [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ## Tasks
-0. [Preprocessor](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x00-hello_world/0-preprocessor)
+### 0. [Preprocessor](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x00-hello_world/0-preprocessor)
 ### Descriptions
 Write a script that runs a C file through the preprocessor and save the result into another file
 - The C file name will be saved in the variable **$CFILE**
