@@ -1,24 +1,6 @@
 #include "main.h"
 
 /**
- * print - subfunction to print
- * @n: var
- */
-
-void print(int n)
-{
-	if (n < 0)
-	{
-		_putchar('-');
-		n = -n;
-	}
-
-	if (n / 10)
-		print(n / 10);
-	_putchar(n % 10 + '0');
-}
-
-/**
  * print_number - print an integer
  * @var: the integer to be printed
  *
@@ -28,5 +10,13 @@ void print(int n)
 
 void print_number(int var)
 {
-	print(varl);
+	if (var < 0)
+	{
+		_putchar('-');
+		var = -var;
+	}
+	
+	if (var / 10)
+		print_number(var / 10);
+	_putchar(var % 10 + '0');
 }
