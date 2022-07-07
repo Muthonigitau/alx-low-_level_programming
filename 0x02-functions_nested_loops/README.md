@@ -2,7 +2,7 @@
 
 This is the third ALX low level programing task, This tasks seeks to inform on [Function](https://www.geeksforgeeks.org/functions-in-c/) [declaration, definition, arguements](https://www.tutorialspoint.com/cprogramming/c_functions.htm), [prototypes](https://www.geeksforgeeks.org/what-is-the-purpose-of-a-function-prototype/), [header](https://www.tutorialspoint.com/cprogramming/c_header_files.htm),[see also](https://www.geeksforgeeks.org/header-files-in-c-cpp-and-its-uses/)  and  calling. [see also](https://www.youtube.com/watch?v=qMlnFwYdqIw) further explains the concept of [C library](https://www.geeksforgeeks.org/c-library-functions/) and finally, [nested loops](https://www.youtube.com/watch?v=Z3iGeQ1gIss). At the end of this tasks, I now have a better understanding of the afore mentioned along side the **gcc** flags **-Wall -Werror -pedantic -Wextra -std=gnu89**
 
-##Tasks
+## Tasks
 for the following tasks I wasnt allowed to use the built in function in the C standard library. Example **printf, puts, putchar etc...**. A **_putchar** function was defined for us by ALX as seen below.
 ```C
 #include <unistd.h>
@@ -16,10 +16,41 @@ for the following tasks I wasnt allowed to use the built in function in the C st
  */
  int _putchar(char c)
  {
- 		return (write(1, &c, 1));
+ 	return (write(1, &c, 1));
  }
 ```
 
 ### 0. [_putchar](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/0-putchar.c)
 #### Descriptions
 Write a program that prints **_putchar**, followed by a new line, the program should return **0**
+
+### 1. [alphabet](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/1-alphabet.c)
+#### Descriptions
+Write a function that prints the alphabet, in lowercase, followed by a new line
+- Prototype: **void print_alphabet(void);**
+- You can only use **_putchar** twice in the code
+#### main.c file to call the prototype
+```C
+#include "main.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+
+int main(void)
+{
+    print_alphabet();
+    return (0);
+}
+```
+#### [header file](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/main.h)
+
+#### Sample output
+```
+$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 1-main.c 1-alphabet.c -o 1-alphabet
+$ ./1-alphabet
+abcdefghijklmnopqrstuvwxyz
+$
+```
