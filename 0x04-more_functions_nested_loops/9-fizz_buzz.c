@@ -21,13 +21,15 @@ int main(void)
 
 	do {
 		if ((ii % 3 == 0) && (ii % 5 == 0))
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		else if (ii % 3 == 0)
-			printf("Fizz ");
+			printf("Fizz");
 		else if (ii % 5 == 0)
-			printf("Buzz ");
+			printf("Buzz");
 		else
-			printf("%d ", ii);
+			printf("%d", ii);
+		if (ii != stopVar)
+			printf(" ");
 		ii++;
 	} while (ii < stopVar + 1);
 	printf("\n");
