@@ -21,6 +21,6 @@ int main(void)
 		else
 			primeFact++;
 	}
-	printf("%ld", primeFact);
+	printf("%ld\n", primeFact);
 	return (0);
 }
