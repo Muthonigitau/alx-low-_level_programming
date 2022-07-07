@@ -21,7 +21,7 @@ int main(void)
 
 	do {
 		if ((ii % 3 == 0) && (ii % 5 == 0))
-			printf("Fizz Buzz ");
+			printf("FizzBuzz ");
 		else if (ii % 3 == 0)
 			printf("Fizz ");
 		else if (ii % 5 == 0)
@@ -29,7 +29,7 @@ int main(void)
 		else
 			printf("%d ", ii);
 		ii++;
-	} while (ii < stopVar);
+	} while (ii < stopVar + 1);
 	printf("\n");
 
 	return (0);
