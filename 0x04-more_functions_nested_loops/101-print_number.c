@@ -1,35 +1,29 @@
 #include "main.h"
 
-/**
- * print_number - print an integer
- * @n: the integer to be printed
- *
- * Created by: Sanctus-Peter
- * cc: 7th july, 2022
- */
+void print_uint(unsigned int n);
 
+/**
+ * print_number - Prints an integer
+ * @n: The integer to print
+ */
 void print_number(int n)
 {
-	int var = 1, ii = 0, jj = 0;
-
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
-	while (n / var)
-	{
-		var *= 10;
-		ii++;
-	}
-	var /= 10;
-	while (jj < ii)
-	{
-		_putchar('0' + n / var);
-		n = n - (n / var) * var;
-		var /= 1;
-		jj++;
-	}
-	if (ii == 0)
-		_putchar('0' + n);
+
+	print_uint((unsigned int) n);
+}
+
+/**
+ * print_uint - Prints an unsigned integer
+ * @n: The unsigned int to print
+ */
+void print_uint(unsigned int n)
+{
+	if (n / 10 != 0)
+		print_uint(n / 10);
+	_putchar(n % 10 + '0');
 }
