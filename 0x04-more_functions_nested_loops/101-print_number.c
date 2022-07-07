@@ -10,25 +10,26 @@
 
 void print(int n)
 {
+	int var = 1, ii = 0, jj = 0;
+
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
-
-	if (n == 0)
-		_putchar('0');
-
-	if (n / 10)
-		print(n / 10);
-	_putchar(n % 10 + '0');
-}
-
-/**
- * print_number - print num
- * @var: var
- */
-void print_number(int var)
-{
-	print(var);
+	while (n / var)
+	{
+		var *= 10;
+		ii++;
+	}
+	var /= 10;
+	while (jj < ii)
+	{
+		_putchar('0' + n / var);
+		n = n - (n / var) * var;
+		var /= 1;
+		jj++;
+	}
+	if (ii == 0)
+		_putchar('0' + n);
 }
