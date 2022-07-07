@@ -2,21 +2,38 @@
 
 /**
  * print_number - print an integer
- * @var: the integer to be printed
+ * @n: the integer to be printed
  *
  * Created by: Sanctus-Peter
  * cc: 7th july, 2022
  */
 
-void print_number(int var)
+void print_number(int n)
 {
-	if (var < 0)
+
+	int d = 1, i = 0, ii = 0;
+
+	if (n < 0)
 	{
 		_putchar('-');
-		var = -var;
+		n = -n;
 	}
-	
-	if (var / 10)
-		print_number(var / 10);
-	_putchar(var % 10 + '0');
+
+	while (n / d != 0)
+	{
+		d *= 10;
+		i++;
+	}
+	d = d / 10;
+
+	while (ii < i)
+	{
+		_putchar('0' + n / d);
+		n = n - (n / d) * d;
+		d = d / 10;
+		ii++;
+	}
+
+	if (i == 0)
+		_putchar('0' + n);
 }
