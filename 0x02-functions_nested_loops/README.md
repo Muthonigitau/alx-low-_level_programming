@@ -148,7 +148,89 @@ $ ./9-times_table | tr ' ' . | cat -e
 0,..9,.18,.27,.36,.45,.54,.63,.72,.81$
 $
 ```
+
 ### 10. [Add](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/10-add.c)
 #### Description
 Write a function that adds two integers and return the result.
 - Prototype: **int add(int, int)**
+
+### 11. [Natural number to 98](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/11-print_to_98.c)
+[Alternative solution](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/111-print_to_98.c)
+#### Descriptions
+Write a function that prints all natural numbers from **n** to **98**, followed by a new line.
+- Prototype: **void print_to_98(int n);**
+- Numbers must be separated by a comma, followed by a space
+- Numbers should be printed in order
+- The first printed number should be the number passed to the function
+- The last printed number should be **98**
+- You are allowed to use the standard library
+
+### 12. [Multiplication table](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/100-times_table.c)
+#### Descriptions
+Write a function that print the n times table starting with 0.
+- Prototype: **void print_times_table(int n)
+- if **n** is greater than **15** or less than **0** then the function should not print anything
+- Format: see example for n = 3, 5, 98, 12
+#### Expected output
+```
+$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 100-main.c 100-times_table.c -o 100-times_table
+$ ./100-times_table 
+0,   0,   0,   0
+0,   1,   2,   3
+0,   2,   4,   6
+0,   3,   6,   9
+
+0,   0,   0,   0,   0,   0
+0,   1,   2,   3,   4,   5
+0,   2,   4,   6,   8,  10
+0,   3,   6,   9,  12,  15
+0,   4,   8,  12,  16,  20
+0,   5,  10,  15,  20,  25
+
+
+0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0
+0,   1,   2,   3,   4,   5,   6,   7,   8,   9,  10,  11,  12
+0,   2,   4,   6,   8,  10,  12,  14,  16,  18,  20,  22,  24
+0,   3,   6,   9,  12,  15,  18,  21,  24,  27,  30,  33,  36
+0,   4,   8,  12,  16,  20,  24,  28,  32,  36,  40,  44,  48
+0,   5,  10,  15,  20,  25,  30,  35,  40,  45,  50,  55,  60
+0,   6,  12,  18,  24,  30,  36,  42,  48,  54,  60,  66,  72
+0,   7,  14,  21,  28,  35,  42,  49,  56,  63,  70,  77,  84
+0,   8,  16,  24,  32,  40,  48,  56,  64,  72,  80,  88,  96
+0,   9,  18,  27,  36,  45,  54,  63,  72,  81,  90,  99, 108
+0,  10,  20,  30,  40,  50,  60,  70,  80,  90, 100, 110, 120
+0,  11,  22,  33,  44,  55,  66,  77,  88,  99, 110, 121, 132
+0,  12,  24,  36,  48,  60,  72,  84,  96, 108, 120, 132, 144
+$ ./100-times_table | tr ' ' . | cat -e
+0,...0,...0,...0$
+0,...1,...2,...3$
+0,...2,...4,...6$
+0,...3,...6,...9$
+$
+0,...0,...0,...0,...0,...0$
+0,...1,...2,...3,...4,...5$
+0,...2,...4,...6,...8,..10$
+0,...3,...6,...9,..12,..15$
+0,...4,...8,..12,..16,..20$
+0,...5,..10,..15,..20,..25$
+$
+$
+0,...0,...0,...0,...0,...0,...0,...0,...0,...0,...0,...0,...0$
+0,...1,...2,...3,...4,...5,...6,...7,...8,...9,..10,..11,..12$
+0,...2,...4,...6,...8,..10,..12,..14,..16,..18,..20,..22,..24$
+0,...3,...6,...9,..12,..15,..18,..21,..24,..27,..30,..33,..36$
+0,...4,...8,..12,..16,..20,..24,..28,..32,..36,..40,..44,..48$
+0,...5,..10,..15,..20,..25,..30,..35,..40,..45,..50,..55,..60$
+0,...6,..12,..18,..24,..30,..36,..42,..48,..54,..60,..66,..72$
+0,...7,..14,..21,..28,..35,..42,..49,..56,..63,..70,..77,..84$
+0,...8,..16,..24,..32,..40,..48,..56,..64,..72,..80,..88,..96$
+0,...9,..18,..27,..36,..45,..54,..63,..72,..81,..90,..99,.108$
+0,..10,..20,..30,..40,..50,..60,..70,..80,..90,.100,.110,.120$
+0,..11,..22,..33,..44,..55,..66,..77,..88,..99,.110,.121,.132$
+0,..12,..24,..36,..48,..60,..72,..84,..96,.108,.120,.132,.144$
+$
+```
+
+### 13. [Multiples of 3 and 5](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/101-natural.c)
+#### Descriptions
+The natural numbers below 10 that are multiples of 3 or 5, are 3, 5, 6, and 9. The sum of these multiples is 23. Write a program that computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
