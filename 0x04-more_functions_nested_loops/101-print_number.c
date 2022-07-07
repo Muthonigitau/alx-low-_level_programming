@@ -5,7 +5,7 @@
  * @n: var
  */
 
-void print(int n)
+void print(unsigned int n)
 {
 	if (n < 0)
 	{
