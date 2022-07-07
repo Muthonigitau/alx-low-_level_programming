@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print - print an integer
+ * print_number - print an integer
  * @n: the integer to be printed
  *
  * Created by: Sanctus-Peter
  * cc: 7th july, 2022
  */
 
-void print(int n)
+void print_number(int n)
 {
 	int var = 1, ii = 0, jj = 0;
 
