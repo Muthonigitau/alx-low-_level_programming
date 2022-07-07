@@ -29,5 +29,4 @@ void print(int n)
 void print_number(int var)
 {
 	print(var);
-	_putchar('\n');
 }
