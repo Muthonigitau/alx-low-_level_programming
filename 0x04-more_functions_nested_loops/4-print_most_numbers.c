@@ -12,7 +12,12 @@ void print_most_numbers(void)
 	int var = 0;
 
 	do {
-		if (var != 2 || var != 4)
+		if (var == 4 || var == 2)
+		{
+			var++;
+			continue;
+		}
+		else
 			_putchar(var + '0');
 		var++;
 	} while (var < 10);
