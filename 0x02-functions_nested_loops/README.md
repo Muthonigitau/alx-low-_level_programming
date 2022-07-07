@@ -54,3 +54,52 @@ $ ./1-alphabet
 abcdefghijklmnopqrstuvwxyz
 $
 ```
+
+### 2. [10x alphabeth](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/2-print_alphabet_x10.c)
+#### Descriptions
+Write a function that prints the alphabet, in lowercase, followed by a new line
+- Prototype: **void print_alphabet_x10(void);**
+- You can only use **_putchar** twice in the code
+#### Sample output
+```
+$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10
+$ ./2-alphabet_x10
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+$ 
+```
+
+### 3. [islower](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/3-islower.c)
+#### Descriptions
+Write a function that checks for lowercase character.
+- Prototype: **int _islower(int c);**
+- Returns 1 if c is lowercase
+- Returns 0 otherwise
+
+### 4. [isalpha](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/4-isalpha.c)
+#### Descriptions
+Write a function that checks for alphabetic character.
+- Prototype: **int _isalpha(int c);**
+- Returns 1 if c is a letter, lowercase or uppercase
+- Returns 0 otherwise
+
+### 5. [sign](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/5-sign.c)
+#### Descriptions
+Write a function that prints the sign of a number.
+- Prototype: **int print_sign(int n);**
+- Returns 1 and prints + if n is greater than zero
+- Returns 0 and prints 0 if n is zero
+- Returns -1 and prints - if n is less than zero
+
+### 6. [absolute](https://github.com/Sanctus-Peter/alx-low_level_programming/blob/main/0x02-functions_nested_loops/6-abs.c)
+#### Descriptions
+Write a function that computes the absolute value of an integer.
+- Prototype: **int _abs(int);**
