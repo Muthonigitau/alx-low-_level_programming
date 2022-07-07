@@ -24,7 +24,8 @@ void more_numbers(void)
 
 			ii++;
 		} while (ii < 15);
-
+		
+		jj++;
 		_putchar('\n');
 	}
 }
