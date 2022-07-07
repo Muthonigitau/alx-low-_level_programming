@@ -28,5 +28,5 @@ void print(unsigned int n)
 
 void print_number(int var)
 {
-	print((unsigned) var);
+	print((unsigned int) var);
 }
