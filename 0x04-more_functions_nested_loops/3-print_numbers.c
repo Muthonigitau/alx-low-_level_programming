@@ -15,4 +15,6 @@ void print_numbers(void)
 		_putchar(ii + '0');
 		ii++;
 	} while (ii < 10);
+
+	_putchar('\n');
 }
