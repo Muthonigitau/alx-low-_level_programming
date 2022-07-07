@@ -19,4 +19,5 @@ void print_number(int var)
 	if (var / 10)
 		print_number(var / 10);
 	_putchar(var % 10 + '0');
+	_putchar('\n');
 }
