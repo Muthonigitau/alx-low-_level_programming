@@ -17,17 +17,13 @@ int _atoi(char *str)
 {
 	int sign = 1, base = 0, i = 0;
 
-	if (strlen(str) < 1)
-		return (0);
-
 	for (i = 0; str[i] != '\0' && (str[i] < '0' || str[i] > '9'); i++)
 	{
 		if (str[i] == '-' || str[i] == '+')
 			sign *= 1 - 2 * (str[i] == '-');
+		if (str[i + 1] == '\0')
+			return (0);
 	}
-
-	if (str[i - 1] == '\0')
-		return (0);
 
 	while (str[i] >= '0' && str[i] <= '9')
 	{
@@ -41,5 +37,6 @@ int _atoi(char *str)
 		}
 		base = 10 * base + (str[i++] - '0');
 	}
+
 	return (base * sign);
 }
