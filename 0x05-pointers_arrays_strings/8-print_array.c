@@ -20,4 +20,5 @@ void print_array(int *arr, int n)
 		if (i < n-1)
 			printf(", ");
 	}
+	putchar('\n');
 }
