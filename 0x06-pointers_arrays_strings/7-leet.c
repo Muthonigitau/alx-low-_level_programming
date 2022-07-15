@@ -1,8 +1,9 @@
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
 
 /**
- * leet - encode into a string 
+ * leet - encode into a string
  * @s: pointer to the string variable
  *
  * Return: pointer to s
@@ -17,10 +18,10 @@ char *leet(char *s)
 	char testCase1[] = "aeotl";
 	char testCase2[] = "AEOTL";
 	char valid[] = "43071";
-	
-	while (s[i++] != '\0')
+
+	while (s[i] != '\0')
 	{
-		for (j = 0; j < strlen(valid); j++)
+		for (j = 0; valid[j] != '\0'; j++)
 		{
 			if (s[i] == testCase1[j] || s[i] == testCase2[j])
 			{
@@ -28,6 +29,7 @@ char *leet(char *s)
 				break;
 			}
 		}
+		i++;
 	}
 	return (s);
 }
