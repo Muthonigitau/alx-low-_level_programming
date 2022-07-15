@@ -15,7 +15,7 @@
 char *cap_string(char *str)
 {
 	int i = 0, j, flag;
-	char wordSep[] = "\n\t\" ,.;!?(){}";
+	char wordSep[] = ",\t;\n; .!?\"(){}";
 
 	do {
 		flag = 0;
