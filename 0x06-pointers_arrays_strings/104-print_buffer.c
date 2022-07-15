@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * isPrintableASCII - determines if n is a printable ASCII char
@@ -73,7 +74,7 @@ void print_buffer(char *b, int size)
 			printASCII(b, start, end);
 			printf("\n");
 		}
-	} 
+	}
 	else
 		printf("\n");
 }
