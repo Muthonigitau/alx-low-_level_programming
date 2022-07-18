@@ -14,5 +14,28 @@
 
 char *_strstr(char *s, char *c)
 {
-	return (strstr(s, c));
+	int len = strlen(c);
+	int i, count = 0;
+
+	if (len < 1)
+		return (NULL);
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (count == len)
+			break;
+
+		if (c[count] == s[i])
+			count++;
+		else
+		{
+			if (count > 0)
+				i -= count;
+			count = 0;
+		}
+	}
+
+	if (count < len)
+		return (NULL);
+	return (s + (i - count));
 }
