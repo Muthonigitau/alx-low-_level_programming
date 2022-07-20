@@ -1,5 +1,5 @@
 #include "main.h"
-
+int checker(char *, char *, int, int, int);
 /**
  * wildcmp - compares two strings
  * @s1: string
