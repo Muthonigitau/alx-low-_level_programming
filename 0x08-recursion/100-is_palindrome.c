@@ -1,5 +1,5 @@
 #include "main.h"
-
+int check(char *, int, int, int);
 /**
  * last_index - return last index
  * @s: pointer to string s
