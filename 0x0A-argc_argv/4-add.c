@@ -14,17 +14,19 @@
 
 int main(int argc, char *argv[])
 {
-	int i, result = 0;
+	int i, j, result = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (*argv[i] < '0' || *argv[i] > '9')
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			exit(EXIT_FAILURE);
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				exit(EXIT_FAILURE);
+			}
 		}
-		else
-			result += atoi(argv[i]);
+		result += atoi(argv[i]);
 	}
 	printf("%d\n", result);
 	exit(EXIT_SUCCESS);
