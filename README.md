@@ -15,3 +15,4 @@ I've recently began my software engineering career at ALX, and as part of requir
 * [0x06-pointers_arrays_strings](0x06-pointers_arrays_strings)
 * [0x07-pointers_arrays_strings](0x07-pointers_arrays_strings)
 * [0x08-Recursion](0x08-recursion)
+* [0x0A-argc_argv](0x0A-argc_argv)
