@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void isnegative(int);
 /**
  * main - print minimum number of coin needed to change money
  * @argc: number of command line parameters passed
@@ -22,13 +23,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	money = atoi(argv[1]);
-
-	if (money < 0)
-	{
-		printf("0\n");
-		exit(EXIT_SUCCESS);
-	}
-	
+	isnegative(money);
 	do {
 		if (money >= 25)
 		{
@@ -58,4 +53,16 @@ int main(int argc, char *argv[])
 	} while (money);
 	printf("%d\n", count);
 	exit(EXIT_SUCCESS);
+}
+/**
+ * isnegative - check if var is negative
+ * @var: variable to be checked
+ */
+void isnegative(int var)
+{
+	if (var < 0)
+	{
+		printf("0\n");
+		exit(EXIT_FAILURE);
+	}
 }
