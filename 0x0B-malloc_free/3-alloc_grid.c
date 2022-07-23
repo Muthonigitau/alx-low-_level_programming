@@ -22,7 +22,16 @@ int **alloc_grid(int col, int row)
 
 	grid = calloc(row, sizeof(int *));
 	for (i = 0; i < row; i++)
+	{
 		grid[i] = calloc(col, sizeof(int));
+		if (grid[i] == NULL)
+		{
+			while (i--)
+				free(grid[i]);
+			free(grid);
+			return (NULL);
+		}
+	}
 
 	if (grid == NULL)
 	{
