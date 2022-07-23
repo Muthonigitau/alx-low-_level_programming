@@ -25,6 +25,9 @@ int **alloc_grid(int col, int row)
 		grid[i] = calloc(col, sizeof(int));
 
 	if (grid == NULL)
+	{
+		free(grid);
 		return (NULL);
+	}
 	return (grid);
 }
