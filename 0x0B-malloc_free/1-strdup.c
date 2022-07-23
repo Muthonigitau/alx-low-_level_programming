@@ -15,15 +15,18 @@
 
 char *_strdup(char *str)
 {
-	unsigned int len = strlen(str);
+	int size = 0;
 	char *strCopy;
 
 	if (str == NULL)
 		return (NULL);
 
-	strCopy = malloc((len + 1) * sizeof(*str));
+	for (; str[size] != '\0'; size++)
+		;
 
-	if (strCopy == NULL || strCopy == 0)
+	strCopy = malloc(size * sizeof(*str) + 1);
+
+	if (strCopy == 0)
 		return (NULL);
 
 	strcpy(strCopy, str);
