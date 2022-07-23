@@ -17,16 +17,14 @@ int **alloc_grid(int col, int row)
 {
 	int i, **grid;
 
-	if (row < 1 || col < 1)
-		return (NULL);
+	grid = malloc(col * sizeof(*grid));
 
-	grid = calloc(row, sizeof(int *));
-	if (grid == NULL)
+	if (row < 1 || col < 1 || grid == 0)
 		return (NULL);
 
 	for (i = 0; i < row; i++)
 	{
-		grid[i] = calloc(col, sizeof(int));
+		grid[i] = calloc(row, sizeof(**grid));
 		if (grid[i] == NULL)
 		{
 			while (i--)
@@ -36,5 +34,5 @@ int **alloc_grid(int col, int row)
 		}
 	}
 
-	return(grid);
+	return (grid);
 }
