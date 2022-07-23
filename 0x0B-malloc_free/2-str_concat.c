@@ -23,7 +23,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 		s1 = "\0";
-	else if (s2 == NULL)
+	if (s2 == NULL)
 		s2 = "\0";
 	i = _strlen(s1);
 	j = _strlen(s2);
