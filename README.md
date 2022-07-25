@@ -1,7 +1,7 @@
 # ALX LOW LEVEL PROGRAMMING
 
 ## Description
-I've recently began my software engineering career at ALX, and as part of requirement      we were asked to learn C programming language, over the next few months i would be applying the knowledge learnt to solving basic tasks. This repo could serve as a guide to aspiring Software engineer at beginner level. 
+I've recently began my software engineering career at ALX, and as part of requirement      we were asked to learn C programming language, over the next few months i would be applying the knowledge learnt to solving basic tasks. This repository could serve as a guide to aspiring Software engineer at beginner level. 
 
 
 ## Contents
