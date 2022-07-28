@@ -11,13 +11,14 @@
  *
  * Return: pointer to the reallocated memory if successful, NULL, otherwise
  */
- 
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	int *tmp;
 
-	(void) old_size;
-    tmp = realloc(ptr, new_size);
+	if (new_size == old_size)
+		return (ptr);
+	tmp = realloc(ptr, new_size);
 	if (tmp == NULL)
 		return (NULL);
 
