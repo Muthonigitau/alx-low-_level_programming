@@ -7,7 +7,7 @@
  * @cmp: flag to compare with different entry
  *
  * Return: index of the first element found,
- * 			-1 if no element found or no element in the array
+ *			-1 if no element found or no element in the array
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
