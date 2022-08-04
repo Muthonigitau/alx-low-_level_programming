@@ -22,3 +22,4 @@ I've recently began my software engineering career at ALX, and as part of requir
 * [0x0D-preprocessor](0x0D-preprocessor)
 * [0x0E-structures_typedef](0x0E-structures_typedef)
 * [0x0F-function_pointers](0x0F-function_pointers)
+* [0x10-variadic_functions](0x10-variadic_functions)
