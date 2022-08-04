@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - print a list of numbers passed to a function
- * @seperator: pointer to a string to be printed inbetween numbers
+ * @separator: pointer to a string to be printed inbetween numbers
  * @n: first number from the list of number to be printed
  */
 
