@@ -22,9 +22,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	*head = new_node;
 
 	if (*head == NULL)
+	{
 		*head = new_node;
+		return (new_node);
+	}
 
-	while (last_node)
+	while (last_node->next)
 		last_node = last_node->next;
 
 	last_node = new_node;
