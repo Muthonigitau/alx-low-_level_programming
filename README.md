@@ -23,3 +23,4 @@ I've recently began my software engineering career at ALX, and as part of requir
 * [0x0E-structures_typedef](0x0E-structures_typedef)
 * [0x0F-function_pointers](0x0F-function_pointers)
 * [0x10-variadic_functions](0x10-variadic_functions)
+* [0x12-singly_linked_lists](0x12-singly_linked_lists)
