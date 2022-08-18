@@ -1,54 +1,29 @@
 #include "main.h"
 
+void print_b_helper(unsigned long int n, unsigned long int i);
 /**
- * dec2bin - convert dec to binary
- * @n: digit to be printed in binary form
- * @buffer: buffer to hold the converted decimal to binary
+ * print_binary - prints an int in binary
+ * @n: number to print
  */
-
-void dec2bin(unsigned long int n, char *buffer)
+void print_binary(unsigned long int n)
 {
-	char res[32];
-	int i = 0;
-
-	while (n)
+	if (!n)
 	{
-		if (n & 1)
-			res[i++] = '1';
-		else
-			res[i++] = '0';
-		n >>= 1;
+		_putchar('0');
+		return;
 	}
-	res[i--] = '\0';
-
-	while (res[i] && i >= 0)
-	{
-		*buffer++ = res[i];
-		i--;
-	}
-	*buffer = '\0';
+	print_b_helper(n, 1);
 }
 
 /**
- * print_binary - print binary
- * @n: decimal digit to be converted to binary
+ * print_b_helper - prints an int in binary
+ * @n: number to print
+ * @i: number to compare (in powers of 2)
  */
-
-void print_binary(unsigned long int n)
+void print_b_helper(unsigned long int n, unsigned long int i)
 {
-	char buf[32];
-	int i = 0;
-
-	if (n == 0)
-	{
-		putchar('0');
+	if (i > n)
 		return;
-	}
-
-	dec2bin(n, buf);
-
-	while (buf[i])
-	{
-		putchar(buf[i++]);
-	}
+	print_b_helper(n, i << 1);
+	_putchar(n & i ? '1' : '0');
 }
